@@ -1,0 +1,98 @@
+.depoimentos__wrap__container{
+    background-color: $preto;
+    padding: 80px 0;
+    margin-bottom: 85px;
+
+    .depoimentos__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .depoimentos__title{
+            font-size: 50px;
+            color: $branco;
+            font-weight: 500;
+        }
+        .depoimentos__subtitle{
+            font-family: 'Authentic Signature';
+            color: $cinza-font;
+            font-size: 60px;
+        }
+        .depoimentos{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: auto;
+
+            .depoimento{
+                background-color: $branco;
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                padding: 30px 20px;
+                margin: 45px 0;
+                width: 30%;
+                border-radius: 5px;
+
+                .depoimento__foto_nome_localizacao_avaliacao{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+
+
+                    .depoimento__nome_localizacao_avaliacao__container{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        text-align: center;
+                        width: 100%;
+
+                        .depoimento__nome{
+                            color: $cor-font-depoimento;
+                            font-size: 13px;
+                        }
+                        .depoimento__localizacao{
+                            color: $preto;
+                            font-size: 13px;
+                        }
+                    }
+                }
+                .depoimento__avaliacao{
+                    text-align: center;
+                    .container__aspa__abertura{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-start;
+                    }
+                    .avaliacao{
+                        font-size: 14px;
+                        margin: 10px 30px;
+                    }
+                    .container__aspa__fim{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+        }
+        .depoimentos__dots__container{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 10px;
+            .depoimento__dot-active{
+                cursor: pointer;
+                border-radius: 4px;
+            }
+            .depoimento__dot-disable{
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        }
+    }
+}

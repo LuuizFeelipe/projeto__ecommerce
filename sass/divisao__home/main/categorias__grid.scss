@@ -1,0 +1,85 @@
+.categorias__grid__container{
+    background-color: $preto;
+    padding: 82px 0;
+    width: 100%;
+    
+    .grid__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "grid1 grid2"
+        "grid1 grid3";
+        gap:30px;
+        width: 100%;
+
+        .categoria__grid{
+            .grid__item{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: end;
+                align-items: start;
+                padding: 0 0 30px 40px;
+
+                .grid__title{
+                    font-family: 'Authentic Signature';
+                    font-size: 160px;
+                    font-weight: 300;
+                    padding-right: 20px;
+                    padding-top: 50px;
+                }
+                .grid__text__container{
+                    .grid__text{
+                        font-size: 25px;
+                        width: 205px;
+                        margin: 10px 0;
+                    }
+                }
+                .grid__btn__link{
+                    text-decoration: none;
+                    color: $branco;
+                    text-transform: uppercase;
+                    text-align: center;
+                    border: 1px solid $branco;
+                    font-size: 17px;
+                    width: 150px;
+                    padding: 5px 10px;
+                }
+            }
+        }
+
+        #categorias__grid1{
+            background-image: url(../../img/main/background_grid/bkgnd__grid1.png);
+            grid-area: grid1;
+            @include padrao__grid;
+        }
+        #categorias__grid2{
+            background-image: url(../../img/main/background_grid/bkgnd__grid2e3.png);
+            grid-area: grid2;
+            @include padrao__grid;
+        }
+        #categorias__grid3{
+            background-image: url(../../img/main/background_grid/bkgnd__grid2e3.png);
+            grid-area: grid3;
+            @include padrao__grid;
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1145px){
+.categorias__grid__container{
+    .grid__container{
+        .categoria__grid{
+            .grid__item{
+                .grid__title{
+                    font-size: 120px;
+                }
+            }
+        }
+    }
+}
+}

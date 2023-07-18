@@ -1,0 +1,19 @@
+//CORES & FONTES
+    //cores
+    $branco: #ffffff;
+    $branco-tom-2: #f1f1f1;
+    $preto: #000000;
+    $cinza: #5a5a5a;
+    $cinza-font: #767676;
+    $vermelho-preco: #ff5d46;
+    $marrom: #7f7673;
+    $cor-font-depoimento: #9e7566;
+    $vermelho: #ff0000;
+
+
+    //fontes
+    $font-poppins: "Poppins";
+    @font-face {
+        font-family: 'Authentic Signature' ;
+        src: url(../../font/Authentic\ Signature.otf) format(opentype);
+    }

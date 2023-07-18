@@ -1,0 +1,28 @@
+// ABRIR E FECHAR CARRINHO
+.abrirAba{
+    animation-name: abrirAba;
+    animation-duration: 0.3s;
+}
+
+@keyframes abrirAba{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.fecharAba{
+    animation-name: fecharAba;
+    animation-duration: 0.3s;
+}
+
+@keyframes fecharAba{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(100%);
+    }
+}

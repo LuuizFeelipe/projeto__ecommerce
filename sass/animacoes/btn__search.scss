@@ -1,0 +1,34 @@
+//ABRIR E FECHAR BUSCA
+.abrirBusca{
+    animation-name: abrirBusca;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes abrirBusca{
+    from{
+        transform: translateX(50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.fecharBusca{
+    animation-name: fecharBusca;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fecharBusca {
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 0;
+        transform: translate(50px);
+    }
+}

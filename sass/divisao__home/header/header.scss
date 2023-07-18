@@ -1,0 +1,158 @@
+.header__container{
+    background-color: $branco;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+
+    .header__content{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 50px;
+
+        .header__logo__wrap{
+            .header__logo__container{
+                .header__logo{
+                    @include padrao__logo;
+                }
+            }
+        }
+        .header__menu__wrap{
+            .header__menu__list{
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+                flex-wrap: wrap;
+                column-gap: 30px;
+                row-gap: 10px;
+                padding: 0 20px;
+                font-size: 18px;
+                text-transform: uppercase;
+            }
+            .menu__item{
+                position: relative;
+                display: inline-block;
+                text-decoration: none;
+                color: $preto;
+            }
+
+            .menu__item::after {
+                @include linha__hover;
+            }
+
+            .menu__item:hover::after {
+                @include linha__hover-active;
+              }
+              
+        }
+        .header__grupo_busca_favorito_login_carrinho{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 39px;
+
+            .header__busca{
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px;
+
+                .form__busca{
+                    position: absolute;
+                    margin-left: -195px;
+
+                    .campo__busca{
+                        width: 100%;
+                        padding: 10px 0;
+                        border: 1.5px solid $preto;
+                        border-radius: 5px;
+                        padding-left: 10px;
+                        background: $branco-tom-2;
+                    }
+                    .campo__busca::placeholder{
+                        font-size: 13px;
+                        font-style: italic;
+                    }
+                    .campo__busca:focus{
+                        outline: none;
+                    }
+                }
+            }
+
+            .header__busca__btn, .header__favorito{
+                height: 20px;
+                cursor: pointer;
+            }
+
+            .header__carrinho{
+                .carrinho__aba-lateral{
+                    position: fixed;
+                    background: $branco;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    width: 30%;
+                    height: 100%;
+                    border-left: 1px solid $preto;
+
+                    .carrinho__itens__closebtn{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding: 30px 30px;
+                        background-color: $preto;
+                        color: $branco;
+                        font-size: 20px;
+
+                        .carrinho__itens{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+                        .carrinho__closebtn{
+                            cursor: pointer;
+                        }
+                    }
+                    .carrinho__vazio{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        height: 100%;
+                        text-align: center;
+
+                        .carrinho__vazio__title{
+                            font-size: 22px;
+                            padding: 5px;
+                        }
+                        .carrinho__vazio__btn{
+                            text-decoration: none;
+                            color: $branco;
+                            background: $preto;
+                            padding: 10px;
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+
+            .header__login, .carrinho__icone__valor{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 10px;
+                cursor: pointer;
+
+                .header__text_icon{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

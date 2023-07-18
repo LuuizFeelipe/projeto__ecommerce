@@ -1,0 +1,175 @@
+.vitrine__wrap__container{
+    .vitrine__wrap__title{
+            text-align: center;
+            padding: 60px 0 30px 0;
+            .vitrine__title{
+                color: &preto;
+                font-size: 25px;
+            }
+    }
+    .vitrine__wrap__slider{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+
+        .slider__grupo{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            flex-wrap: nowrap;
+            align-items: center;
+
+            .arrow{
+                height: 22px;
+                cursor: pointer;
+            }
+
+            .btn__dots{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                height: 15px;
+                cursor: pointer;
+            }
+        }
+    }
+    .vitrine__wrap__produtos{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        .produto{
+            cursor: pointer;
+            .container__produto__imagem{
+                width: auto;
+                height: 492px;
+            }
+            .container__tag{
+                position: absolute;
+                margin-top: -485px;
+                margin-left: 10px;
+
+                .tag__lancamento{
+                    font-size: 11px;
+                    font-weight: 700;
+                    background: $cinza;
+                    color: $branco;
+                    padding: 2px 3px;
+                    border-radius: 2px;
+                }
+            }
+            .container__produto_estrelas_nome_ref_valor_pagamento_parcelamento{
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+
+                .produto__estrelas{
+                    height: 26px;
+                }
+                .produto__nome{
+                    .nome{
+                        font-size: 15px;
+                    }
+                }
+                .produto__ref{
+                    font-size: 12px;
+                    margin-bottom: 10px;
+                }
+                .produto__valor_pagamento-boleto{
+                    color: $vermelho-preco;
+                    font-weight: 700;
+                    text-align: center;
+                    .pagamento-boleto{
+                        font-size: 10px;
+                        margin-bottom: 5px;
+                    }
+                }
+                .produto__valor_parcelamento{
+                    font-size: 12px;
+                }
+            }
+            .btn__hover__comprar_favoritar_espiar{
+                display: flex;
+                justify-content: center;
+                .btn__comprar{
+                    opacity: 0;
+                    transition: 0.5s;
+                    margin: 10px auto;
+                    background-color: $cinza;
+                    color: $branco;
+                    border: none;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    font-size: 16px;
+                    padding: 15px 50px;
+                    cursor: pointer;
+                }
+                .btn__comprar:hover{
+                    background: $preto;
+                }
+                .btns__hover__favoritar_espiar{
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    margin-top: -180px;
+                    
+                    .btn__favoritar{
+                        @include hover__favoritar__espiar;
+                        border-radius: 25px 0 0 25px;
+                        border-right: 1px solid $marrom;
+                        opacity: 0;
+                    }
+                    .btn__espiar{
+                        @include hover__favoritar__espiar;
+                        border-radius: 0 25px 25px 0;
+                        border-left: 1px solid $marrom;
+                        opacity: 0;
+                    }
+                    .btn__favoritar:hover, .btn__espiar:hover{
+                        background-color: $preto;
+                    }
+                }
+            }
+        }
+        .produto:hover{
+            .btn__comprar{
+                opacity: 100%;
+            }
+            .btns__hover__favoritar_espiar{
+                .btn__favoritar, .btn__espiar{
+                    opacity: 100%;
+                }
+            }
+        }
+    }
+
+    .vitrine__wrap__vertodos{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        .vitrine__vertodos{
+        display: inline-block;
+        position: relative;
+        text-decoration: none;
+        font-size: 20px;
+        color: $preto;
+        margin: 40px 0 100px 0;
+        text-align: center;
+    }
+    }
+    .vitrine__vertodos::after{
+        @include linha__hover
+    }
+
+    .vitrine__vertodos:hover::after{
+        @include linha__hover-active;
+    }
+
+
+}

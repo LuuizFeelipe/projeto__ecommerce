@@ -1,0 +1,63 @@
+.newsletter__wrap__container{
+    background-color: $cinza;
+    height: 380px;
+
+    .newsletter__container{
+        display: flex;
+        flex-direction: column;
+
+        .newsletter{
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 90px 0;
+
+            .newsletter__logo{
+                @include padrao__logo;
+            }
+            .newsletter__vantagem__text{
+                width: 35%;
+                .vantagem__text{
+                    @include padrao__vantagem;
+                }
+            }
+            #newsletter__form{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 5px;
+                width: 40%;
+
+                .form{
+                    width: 100%;
+                    height: 41px;
+                    border: none;
+                }
+                .form__input{
+                    padding-left: 10px;
+                    width: 100%;
+                }
+                .form__Input::placeholder{
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+                .form__input:focus{
+                    border: none;
+                    outline: none;
+                }
+
+                .newsletter__btn__form{
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 700;
+                    color: $branco;
+                    background-color: $preto;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,66 @@
+//CORES E FONTES
+@import "./cores_fontes/cores_fontes.scss";
+
+//MIXINS
+@import "./mixins/mixins.scss";
+
+//ANIMACOES
+@import "./animacoes/btn__carrinho.scss";
+@import "./animacoes/btn__search.scss";
+@import "./animacoes/btn__top.scss";
+@import "./animacoes/btn__outlet.scss";
+
+//DIVISAO HOME 
+    //header
+@import "./divisao__home/header/header.scss";
+    //main
+@import "./divisao__home/main/banner__slider.scss";
+@import "./divisao__home/main/vitrine__wrap.scss";
+@import "./divisao__home/main/vantagens__site.scss";
+@import "./divisao__home/main/categorias__grid.scss";
+@import "./divisao__home/main/banner__fixo.scss";
+@import "./divisao__home/main/depoimentos.scss";
+    //footer
+@import "./divisao__home/footer/newsletter.scss";
+@import "./divisao__home/footer/loja__whatsapp.scss";
+@import "./divisao__home/footer/redes__sociais.scss";
+@import "./divisao__home/footer/topicos__footer.scss";
+@import "./divisao__home/footer/informacoes__loja.scss";
+@import "./divisao__home/footer/btns__fixed.scss";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 16px;
+    background: $branco;
+    font-weight: 400;
+    font-family: $font-poppins;
+    height: 100vh;
+    width: 100%;
+}
+
+main{
+    margin-top: 105px;
+}
+
+.conteudo{
+    margin: 0 13%;
+}
+
+ul, li, ol{
+    list-style: none;
+}
+
+.active{
+    display: block;
+}
+.disable{
+    transition: 5s;
+    display: none;
+}
+

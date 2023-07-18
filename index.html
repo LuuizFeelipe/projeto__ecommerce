@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TITLE -->
+    <title>Loja - Modelo</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- GOOGLE FONT POPINS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+    <!-- JAVASCRIPT -->
+    <script src="./js/main.js" type="module" defer></script>
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0a32c44bfb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <section class="header__container">
+            <section class="header__content">
+                <!-- logo -->
+                <div class="header__logo__wrap">
+                    <h1 class="header__logo__container">
+                        <a href="index.html" class="header__logo">LOGO</a>
+                    </h1>
+                </div>
+                <!-- menu desktop -->
+                <nav class="header__menu__wrap">
+                    <ul class="header__menu__list">
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-1">News</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-2">Cintas</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-3">Calcinhas</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-4">Pijamas</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-5">Camisolas</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-6">Gestante</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-7">Sutiãs</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item" id="menu__item-8">Coleções</a></li>
+                        <li class="menu__list__item"><a href="#" class="menu__item outlet" id="menu__item-9">Outlet</a></li>
+                    </ul>
+                </nav>
+                <!-- grupo: busca, favorito, login, carrinho -->
+                <section class="header__grupo_busca_favorito_login_carrinho">
+                    <aside class="header__busca">
+                        <form class="form__busca disable fecharBusca" id="form__busca">
+                            <input type="text" class="campo__busca" id="campo__busca" placeholder="Buscar..." >
+                        </form>
+                        <div class="header__busca__btn" id="header__busca__btn">
+                            <img src="./img/header/lupa.png" alt="Busca">
+                        </div>
+                    </aside>
+                    <a class="header__favorito">
+                        <img class="header__favorito__btn" src="./img/header/icon_favorito.png" alt="Favoritos">
+                    </a>
+                    <div class="header__login">
+                        <img class="header__login__btn" src="./img/header/icon_woman.png" alt="Login">
+                        <p class="header__text_icon">Login | Cadastre-se</p>
+                    </div>
+                    <div class="header__carrinho">
+                        <aside class="carrinho__container__aba-lateral">
+                            <div class="carrinho__aba-lateral disable" id="carrinho__aba-lateral">
+                                <div class="carrinho__itens__closebtn">
+                                    <div class="carrinho__itens">
+                                        <i class="fa-solid fa-cart-shopping aba-lateral__icon"></i>
+                                        <h4 class="aba-lateral__title">Carrinho:</h4>
+                                        <span class="aba-lateral__quantidade">0 itens</span>
+                                    </div>
+                                    <div class="carrinho__closebtn" id="carrinho__closebtn">
+                                        <i class="fa-solid fa-x aba-lateral__icon"></i>
+                                    </div>
+                                </div>
+                                <div class="carrinho__vazio">
+                                    <h3 class="carrinho__vazio__title">Seu carrinho está vazio :(</h3>
+                                    <a  class="carrinho__vazio__btn" href="#">Escolher Produtos</a>
+                                </div>
+                            </div>
+                        </aside>
+                        <div class="carrinho__icone__valor" id="carrinho__icone__valor">
+                            <div class="header__carrinho__btn">
+                                <img src="./img/header/icon_carrinho.png" alt="Carrinho">
+                            </div>
+                            <p class="header__text_icon">R$0,00</p>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </header>
+
+    <main>
+        <!-- banner slide -->
+        <section class="banner__slider__container">
+            <div class="slides">
+               
+                <input type="radio" name="radio-btn" id="radio1" checked>
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+             
+                <div class="slide first">
+                    <img src="./img/main/banner__slider/bannerteste1.jpg" alt="Primeiro banner teste">
+                </div>
+                <div class="slide">
+                    <img src="./img/main/banner__slider/bannerteste2.jpg" alt="Segundo banner teste">
+                </div>
+                <div class="slide">
+                    <img src="./img/main/banner__slider/bannerteste3.jpg" alt="Terceiro banner teste">
+                </div>
+    
+            </div>
+            <div class="manual__navigation">
+                <label for="radio1" class="manual__btn"></label>
+                <label for="radio2" class="manual__btn"></label>
+                <label for="radio3" class="manual__btn"></label>
+            </div>
+        </section>
+        <!-- vitrine de produtos LANÇAMENTO -->
+        <section class="vitrine__wrap__container">
+            <div class="conteudo">
+                <div class="vitrine__wrap__title">
+                    <h2 class="vitrine__title">Lançamentos</h2>
+                </div>
+                <div class="vitrine__wrap__slider">
+                    <div class="slider__grupo">
+                        <div class="arrow arrow__left">
+                            <img src="./img/main/arrow-left.png" alt="Seta esquerda">
+                        </div>
+                        <div class="btn__dots">
+                            <img src="./img/main/dot-checked.png" alt="Botão dot 1" id="radio1">
+                            <img src="./img/main/dot-disable.png" alt="Botão dot 2" id="radio2">
+                            <img src="./img/main/dot-disable.png" alt="Botão dot 3" id="radio3">
+                        </div>
+                        <div class="arrow arrow__rigth">
+                            <img src="./img/main/arrow-rigth.png" alt="Seta direita">
+                        </div>
+                    </div>
+                </div>
+                <div class="vitrine__wrap__produtos">
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto1.png" alt="Foto produto">
+                        </div>
+                        <div class="container__tag">
+                            <span class="tag__lancamento">Lançamento</span>
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto2.png" alt="Foto produto">
+                        </div>
+                        <div class="container__tag">
+                            <span class="tag__lancamento">Lançamento</span>
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto3.png" alt="Foto produto">
+                        </div>
+                        <div class="container__tag">
+                            <span class="tag__lancamento">Lançamento</span>
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto4.png" alt="Foto produto">
+                        </div>
+                        <div class="container__tag">
+                            <span class="tag__lancamento">Lançamento</span>
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vitrine__wrap__vertodos">
+                    <a class="vitrine__vertodos" href="#">Ver todos</a>
+                </div>
+            </div>
+        </section>
+        <!-- vantagens do site (formas de pagamento aceitas, desconto, entrega, etc) -->
+        <section class="vantagens__site__container">
+                <div class="conteudo">
+                    <div class="vantagens">
+                        <div class="vantagem">
+                            <div class="vantagem__icon__container"><img class="vantagem__icon" src="./img/main/vantagens__site/icon_frete.png" alt="Vantagem de frete"></div>
+                            <p class="vantagem__text"><strong class="strong__text">FRETE GRÁTIS</strong> A PARTIR DE R$ 199 (SUDESTE) E R$ 299 (BRASIL)</p>
+                        </div>
+                        <div class="vantagem">
+                            <div class="vantagem__icon__container"><img class="vantagem__icon" src="./img/main/vantagens__site/icon_boleto.png" alt="Vantagem de desconto no boleto"></div>
+                            <p class="vantagem__text"><strong class="strong__text">10% DE DESCONTO</strong> NO BOLETO BANCÁRIO / DEPÓSITO</p>
+                        </div>
+                        <div class="vantagem">
+                            <div class="vantagem__icon__container"><img class="vantagem__icon" src="./img/main/vantagens__site/icon_cartao.png" alt="Quantidade de parcelas aceitas"></div>
+                            <p class="vantagem__text"><strong class="strong__text">ATÉ 10X SEM JUROS</strong> NOS CARTÕES DE CRÉDITO</p>
+                        </div>
+                        <div class="vantagem">
+                            <div class="vantagem__icon__container"><img class="vantagem__icon" src="./img/main/vantagens__site/icon_2cartoes.png" alt="Vantagem de poder usar dois cartões de crédito para pagamento"></div>
+                            <p class="vantagem__text">PAGAMENTO COM ATÉ <strong class="strong__text">DOIS CARTÕES</strong></p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- vitrine de produtos DESTAQUES -->
+        <section class="vitrine__wrap__container">
+            <div class="conteudo">
+                <div class="vitrine__wrap__title">
+                    <h2 class="vitrine__title">Destaques</h2>
+                </div>
+                <div class="vitrine__wrap__slider">
+                    <div class="slider__grupo">
+                        <div class="arrow arrow__left">
+                            <img src="./img/main/arrow-left.png" alt="Seta esquerda">
+                        </div>
+                        <div class="btn__dots">
+                            <img src="./img/main/dot-checked.png" alt="Botão dot 1" id="radio1">
+                            <img src="./img/main/dot-disable.png" alt="Botão dot 2" id="radio2">
+                            <img src="./img/main/dot-disable.png" alt="Botão dot 3" id="radio3">
+                        </div>
+                        <div class="arrow arrow__rigth">
+                            <img src="./img/main/arrow-rigth.png" alt="Seta direita">
+                        </div>
+                    </div>
+                </div>
+                <div class="vitrine__wrap__produtos">
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto1.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto2.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto3.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto4.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vitrine__wrap__vertodos">
+                    <a class="vitrine__vertodos" href="#">Ver todos</a>
+                </div>
+            </div>
+        </section>
+        <!-- categorias grid -->
+        <section class="categorias__grid__container">
+            <div class="conteudo">
+                <div class="grid__container">
+                    <div id="categorias__grid1" class="categoria__grid">
+                        <div class="grid__item">
+                            <h4 class="grid__title">Camisolas</h4>
+                            <div class="grid__text__container">
+                                <p class="grid__text">Para quem quer relaxar</p>
+                            </div>
+                            <a class="grid__btn__link" href="#">Veja mais</a>
+                        </div>
+                    </div>
+                    <div id="categorias__grid2" class="categoria__grid">
+                        <div class="grid__item">
+                            <h4 class="grid__title">Linha noite</h4>
+                            <div class="grid__text__container">
+                                <p class="grid__text">Para quem ama praticidade</p>
+                            </div>
+                            <a class="grid__btn__link" href="#">Veja mais</a>
+                        </div>
+                    </div>
+                    <div id="categorias__grid3" class="categoria__grid">
+                        <div class="grid__item">
+                            <h4 class="grid__title">Sutiãs</h4>
+                            <div class="grid__text__container">
+                                <p class="grid__text">Para quem ama conforto</p>
+                            </div>
+                            <a class="grid__btn__link" href="#">Veja mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- vitrine de produtos OUTLET -->
+        <section class="vitrine__wrap__container">
+            <div class="conteudo">
+                <div class="vitrine__wrap__title">
+                    <h2 class="vitrine__title">Outlet</h2>
+                </div>
+                <div class="vitrine__wrap__slider">
+                    <div class="slider__grupo">
+                        <div class="arrow arrow__left">
+                            <img src="./img/main/arrow-left.png" alt="Seta esquerda">
+                        </div>
+                        <div class="btn__dots">
+                            <img src="./img/main/dot-checked.png" alt="Botão dot 1" id="radio1">
+                            <img src="./img/main/dot-disable.png" alt="Botão dot 2" id="radio2">
+                            <img src="./img/main/dot-disable.png" alt="Botão dot 3" id="radio3">
+                        </div>
+                        <div class="arrow arrow__rigth">
+                            <img src="./img/main/arrow-rigth.png" alt="Seta direita">
+                        </div>
+                    </div>
+                </div>
+                <div class="vitrine__wrap__produtos">
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto1.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto2.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto3.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="produto">
+                        <div class="container__produto__imagem">
+                            <img class="produto__imagem" src="./img/main/produtos/produto4.png" alt="Foto produto">
+                        </div>
+                        <div class="container__produto_estrelas_nome_ref_valor_pagamento_parcelamento">
+                            <div class="produto__estrelas">
+                                <img class="estrelas" src="./img/main/5estreas-produto.png" alt="Estrelas de avaliação">
+                            </div>
+                            <div class="produto__nome">
+                                <h3 class="nome">Lorem ipsum dolor sit amet</h3>
+                            </div>
+                            <small class="produto__ref">
+                                ref:pdc202
+                            </small>
+                            <div class="produto__valor_pagamento-boleto">
+                                <div class="produto__valor">
+                                    <span class="valor">R$ 55,90</span>
+                                </div>
+                                <div class="produto__pagamento-boleto">
+                                    <p class="pagamento-boleto">no boleto</p>
+                                </div>
+                            </div>
+                            <div class="produto__valor_parcelamento">
+                                <p class="parcelamento">em até 10x de <span>R$ 6,30</span></p>
+                            </div>
+                        </div>
+                        <div class="btn__hover__comprar_favoritar_espiar">
+                            <button type="button" class="btn__comprar">Compre agora</button>
+                            <div class="btns__hover__favoritar_espiar">
+                                <button type="button" class="btn__favoritar">
+                                    <img src="./img/main/icon_favorito-branco.png" alt="Icone favoritar"> Favoritar
+                                </button>
+                                <button type="button" class="btn__espiar">
+                                    <img src="./img/main/icon_espiar.png" alt="Icone espiar"> Espiar
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="vitrine__wrap__vertodos">
+                    <a class="vitrine__vertodos" href="#">Ver todos</a>
+                </div>
+            </div>
+        </section>
+        <!-- banner fixo -->
+        <section class="banner__fixo__container">
+            <img class="banner__fixo" src="./img/main/banner_fixo/banner__fixo.png" alt="Banner fixo">
+        </section>
+        <!-- depoimentos -->
+        <section class="depoimentos__wrap__container">
+            <div class="conteudo">
+                <div class="depoimentos__container">
+                    <h4 class="depoimentos__title">Depoimentos</h4>
+                    <p class="depoimentos__subtitle">O que as nossas clientes estão dizendo</p>
+                    <div class="depoimentos">
+                        <div class="depoimento">
+                            <div class="depoimento__foto_nome_localizacao_avaliacao">
+                                <div class="depoimento__foto__container">
+                                    <img src="./img/main/depoimento/pessoa1.png" alt="Foto de perfil avaliação">
+                                </div>
+                                <div class="depoimento__nome_localizacao_avaliacao__container">
+                                    <h5 class="depoimento__nome">Eliana A.</h5>
+                                    <span class="depoimento__localizacao">São José do Rio Preto - SP</span>
+                                    <img class="depoimento__avaliacao" src="./img/main/5estreas-produto.png" alt="Avaliação">
+                                </div>
+                            </div>
+                            <div class="depoimento__avaliacao">
+                                <div class="container__aspa__abertura"><img class="aspa__abertura" src="./img/main/depoimento/aspa1.png" alt="Aspas"></div>
+                                <p class="avaliacao">Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting</p>
+                                <div class="container__aspa__fim"><img class="aspa__fim" src="./img/main/depoimento/aspa2.png" alt="Aspas"></div>
+                            </div>
+                        </div>
+                        <div class="depoimento">
+                            <div class="depoimento__foto_nome_localizacao_avaliacao">
+                                <div class="depoimento__foto__container">
+                                    <img src="./img/main/depoimento/pessoa2.png" alt="Foto de perfil avaliação">
+                                </div>
+                                <div class="depoimento__nome_localizacao_avaliacao__container">
+                                    <h5 class="depoimento__nome">Eliana A.</h5>
+                                    <span class="depoimento__localizacao">São José do Rio Preto - SP</span>
+                                    <img class="depoimento__avaliacao" src="./img/main/5estreas-produto.png" alt="Avaliação">
+                                </div>
+                            </div>
+                            <div class="depoimento__avaliacao">
+                                <div class="container__aspa__abertura"><img class="aspa__abertura" src="./img/main/depoimento/aspa1.png" alt="Aspas"></div>
+                                <p class="avaliacao">Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting</p>
+                                <div class="container__aspa__fim"><img class="aspa__fim" src="./img/main/depoimento/aspa2.png" alt="Aspas"></div>
+                            </div>
+                        </div>
+                        <div class="depoimento">
+                            <div class="depoimento__foto_nome_localizacao_avaliacao">
+                                <div class="depoimento__foto__container">
+                                    <img src="./img/main/depoimento/pessoa3.png" alt="Foto de perfil avaliação">
+                                </div>
+                                <div class="depoimento__nome_localizacao_avaliacao__container">
+                                    <h5 class="depoimento__nome">Eliana A.</h5>
+                                    <span class="depoimento__localizacao">São José do Rio Preto - SP</span>
+                                    <img class="depoimento__avaliacao" src="./img/main/5estreas-produto.png" alt="Avaliação">
+                                </div>
+                            </div>
+                            <div class="depoimento__avaliacao">
+                                <div class="container__aspa__abertura"><img class="aspa__abertura" src="./img/main/depoimento/aspa1.png" alt="Aspas"></div>
+                                <p class="avaliacao">Lorem Ipsum is simply dummy text
+                                    of the printing and typesetting</p>
+                                <div class="container__aspa__fim"><img class="aspa__fim" src="./img/main/depoimento/aspa2.png" alt="Aspas"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depoimentos__dots__container">
+                        <img class="depoimento__dot-active" src="./img/main/dots__depoimento/dot__active.jpg" alt="dot active">
+                        <img class="depoimento__dot-disable" src="./img/main/dots__depoimento/dot__disable.jpg" alt="dot disable">
+                        <img class="depoimento__dot-disable" src="./img/main/dots__depoimento/dot__disable.jpg" alt="dot disable">
+                        <img class="depoimento__dot-disable" src="./img/main/dots__depoimento/dot__disable.jpg" alt="dot disable">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- newsletter form -->
+        <section class="newsletter__wrap__container">
+            <div class="conteudo">
+                <div class="newsletter__container">
+                    <div class="newsletter">
+                        <div class="newsletter__logo__wrap">
+                            <h5 class="newsletter__logo__container">
+                                <a href="index.html" class="newsletter__logo">LOGO</a>
+                            </h5>
+                        </div>
+                        <div class="newsletter__vantagem__text">
+                            <p class="vantagem__text">Cadastre-se com seu email e <strong class="strong__text">ganhe 10% de desconto</strong> na sua primeira compra</p>
+                        </div>
+                        <form id="newsletter__form">
+                            <input type="text" class="form form__input" id="form__nome" placeholder="NOME">
+                            <input type="email" class="form form__input" id="form__nome" placeholder="EMAIL">
+                            <button type="button" form="newsletter__form" class="form newsletter__btn__form">CADASTRAR</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- foto da loja e whatsapp banner -->
+        <section class="loja__whatsapp__container">
+            <div class="conteudo">
+                <div class="loja__whatsapp">
+                    <div class="container__foto__loja">
+                        <img class="foto__loja" src="./img/footer/imagem__loja.png" alt="Imagem loja">
+                    </div>
+                    <div class="container__whatsapp">
+                        <div class="container__text__whatsapp">
+                            <h5 class="text__whatsapp__title">Alguma dúvida?</h5>
+                            <p class="text__whatsapp__text">Entre em contato pelo nosso <strong class="strong__text">Whatsapp (22) 99898-9898</strong></p>
+                        </div>
+                    </div>
+            </div>
+            </div>
+        </section>
+        <!-- redes sociais icons -->
+        <section class="redes__sociais__container">
+            <div class="conteudo">
+                <div class="redes__sociais">
+                    <a class="redes__socias__icon" href="#"><img src="./img/footer/facebook_icon.png" alt="Ícone Facebook"></a>
+                    <a class="redes__socias__icon" href="#"><img src="./img/footer/instagram_icon.png" alt="Ícone instagram"></a>
+                    <a class="redes__socias__icon" href="#"><img src="./img/footer/youtube_icon.png" alt="Ícone Youtube"></a>
+                </div>
+            </div>
+        </section>
+        <!-- topicos footer -->
+        <section class="topicos__wrap">
+            <div class="conteudo">
+                <div class="topicos">
+                    <!-- institucional -->
+                    <div class="topico">
+                        <h5 class="topico__title">Institucional</h5>
+                        <ul class="topico__list">
+                            <li><a href="#" class="topico__list__link">Quem Somos</a></li>
+                            <li><a href="#" class="topico__list__link">Loja Física</a></li>
+                            <li><a href="#" class="topico__list__link">Central de Ajuda</a></li>
+                            <li><a href="#" class="topico__list__link">Contato</a></li>
+                            <li><a href="#" class="topico__list__link">Procon</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contato -->
+                    <div class="topico">
+                        <h5 class="topico__title">Contato</h5>
+                        <ul class="topico__list">
+                            <li><p class="topico__list__link topico__list__text">Segunda a sexta De 7 as 17h </p></li>
+                            <li><a href="#" class="topico__list__link">(22) 2522-2222</a></li>
+                            <li><a href="#" class="topico__list__link">(22) 99999-9999</a></li>
+                            <li><a href="#" class="topico__list__link">contato@teste.com.br </a></li>
+                        </ul>
+                    </div>
+                    <!-- Formas de pagamento -->
+                    <div class="topico">
+                        <h5 class="topico__title">Formas de pagamento</h5>
+                        <ul class="topico__list">
+                            <li><a href="#" class="topico__list__link"></a><img src="./img/footer/formas__de__pagamento.png" alt="Formas de pagamento aceitas"></li>
+                        </ul>
+                    </div>
+                    <!-- forma de entrega -->
+                    <div class="topico">
+                        <h5 class="topico__title">Forma de entrega</h5>
+                        <ul class="topico__list">
+                            <li><a href="#" class="topico__list__link"></a><img src="./img/footer/correios.png" alt="Forma de entrega"></li>
+                        </ul>
+                    </div>
+                    <!-- Segurança e qualidade -->
+                    <div class="topico">
+                        <h5 class="topico__title">Segurança e qualidade</h5>
+                        <ul class="topico__list">
+                            <div class="qualidade__segurança__flex">
+                                <li><a href="#" class="topico__list__link"></a><img src="./img/footer/ebit.png" alt="Selo ebit"></li>
+                                <li><a href="#" class="topico__list__link"></a><img src="./img/footer/SSL.png" alt="Selo segurança"></li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- informacoes loja -->
+        <section class="informacoes__loja__condicoes">
+            <div class="informacoes__loja">
+                <div class="conteudo">
+                    <div class="informacoes__linha1">
+                        <div class="info__item__loja">
+                            <p class="item__loja__text">LOREM IPSUM COMERCIO DE VESTUÁRIO LTDA. | CNPJ: 01.111.000/0001-01   / RUA DAS COVES, 100, CENTRO, NOVA FRIBURGO / RJ -  26.600-000</p>
+                        </div>
+                        <div class="info__item__wx3">
+                            <a href="https://wx3.com.br/" target="_blank"><img src="./img/footer/wx3.png" alt="Wx3"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="informacoes__condicao">
+                <p class="text__condicao">
+                    Preços e condições de pagamento exclusivos para compras via internet. Ofertas válidas até o término de nossos estoques para internet. Vendas sujeitas à análise e <br>
+confirmação de dados. Em caso de divergência de preços no site, o valor válido é o do Carrinho de Compras.
+                </p>
+            </div>
+        </section>
+        <!-- botões fixos topo site -->
+            <!-- topo site -->
+        <div class="btn__top__fixed disable" id="btn__top">
+            <i class="fa-solid fa-chevron-up icon__top"></i>
+        </div>
+            <!-- whatsapp -->
+        <div class="btn__whatsapp__fixed">
+            <a href="#">
+                <img class="logo__whatsapp" src="./img/footer/whatsapp.png" alt="Whatsapp">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

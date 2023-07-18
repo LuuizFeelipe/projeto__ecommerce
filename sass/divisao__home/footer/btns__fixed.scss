@@ -1,0 +1,27 @@
+.btn__top__fixed{
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    z-index: 2;
+
+    .icon__top{
+        font-size: 25px;
+        background: $cor-font-depoimento;
+        color: $branco;
+        padding: 10px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+}
+
+.btn__whatsapp__fixed{
+    width: 50px;
+    position: fixed;
+    left: 40px;
+    bottom: 25px;
+    z-index: 2;
+
+    .logo__whatsapp{
+        width: 100%;
+    }
+}
