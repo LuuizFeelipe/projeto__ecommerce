@@ -30,10 +30,10 @@
                 align-items: center;
                 flex-wrap: wrap;
                 gap: 30px;
-                row-gap: 10px;
-                padding: 0 20px;
                 font-size: 18px;
+                padding: 0 20px;
                 text-transform: uppercase;
+
             }
             .menu__item{
                 position: relative;
@@ -45,10 +45,9 @@
             .menu__item::after {
                 @include linha__hover;
             }
-
-            .menu__item:hover::after {
+            .menu__item:hover::after{
                 @include linha__hover-active;
-              }
+            }
               
         }
         .header__grupo_busca_favorito_login_carrinho{
@@ -169,7 +168,7 @@
         }
     }
 }
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1416px){
     .header__container{
         .header__content{
             .header__menu__wrap{
