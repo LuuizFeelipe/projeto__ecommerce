@@ -29,7 +29,7 @@
                 flex-direction: row;
                 align-items: center;
                 flex-wrap: wrap;
-                column-gap: 30px;
+                gap: 30px;
                 row-gap: 10px;
                 padding: 0 20px;
                 font-size: 18px;
@@ -151,6 +151,55 @@
 
                 .header__text_icon{
                     font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1596px){
+    .header__container{
+        .header__content{
+            .header__menu__wrap{
+                .header__menu__list{
+                    font-size: 16px;
+                    gap: 15px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1400px){
+    .header__container{
+        .header__content{
+            .header__menu__wrap{
+                .header__menu__list{
+                    font-size: 14px;
+                    gap: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1282px){
+    .header__container{
+        .header__content{
+            .header__menu__wrap{
+                .header__menu__list{
+                    font-size: 11px;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1024px){
+    .header__container{
+        .header__content{
+            .header__menu__wrap{
+                .header__menu__list{
+                    font-size: 10px;
+                    gap: 5px;
                 }
             }
         }
